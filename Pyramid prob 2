@@ -1,0 +1,27 @@
+# C-Practise-Problems
+Programs
+#include <stdio.h>
+
+int main()
+{
+   int i,j,m=5,space=4,l=1,k;
+   for(i=1;i<=m;i++)
+   {
+       for(j=0;j<space;j++)
+       {
+           printf(" ");
+       }
+       for(k=1;k<=l;k++)
+       {
+           printf(" %d",k);
+       }
+       l=l+1;
+       printf("\n");
+       space--;
+   }
+   
+      
+    return 0;
+}
+
+
