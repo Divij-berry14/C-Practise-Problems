@@ -4,10 +4,12 @@ Programs
 
 int main()
 {
-   int i,j,m=5,space=4,l=1,k;
+   int i,j,m,l=1,k;
+   printf("enter any number");
+   scanf("%d",&m);
    for(i=1;i<=m;i++)
    {
-       for(j=0;j<space;j++)
+       for(j=m-1;j>i;j--)
        {
            printf(" ");
        }
@@ -17,7 +19,7 @@ int main()
        }
        l=l+1;
        printf("\n");
-       space--;
+      
    }
    
       
