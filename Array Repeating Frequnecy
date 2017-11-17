@@ -1,0 +1,26 @@
+Q. Wap a program inwhich you have to input an array and in that array same number u have to print the frequency.
+input-1 2 1 1 1 1
+output-1 is repeated 5 times
+       2 is repeated 1 times
+#include<stdio.h>
+int main()
+{
+	int a[5]={0};
+	int i,n;
+	int var=0;
+	printf("enter size");
+	scanf("%d",&n);
+	printf("enter array elements");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&var);
+		a[var-1]=a[var-1]+1;
+	}
+	for(i=0;i<n;i++)
+	{
+	printf("%d is repeated %d times",i+1,a[i]);	
+	}
+
+	
+	return 0;
+}
