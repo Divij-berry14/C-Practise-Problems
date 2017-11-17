@@ -1,0 +1,30 @@
+Wap to print the repeated nuber frequency.
+#include <stdio.h>
+
+int main()
+{
+int a[10],i,j,ele,flag,count;
+printf("enter array elemnts");
+for(i=0;i<6;i++)
+{
+    scanf("%d",&a[i]);
+}//flag=1;
+for(i=0;i<6;i++)
+{
+    flag=1;
+    for(j=i+1;j<6;j++)
+    {
+        if(a[i]==a[j])
+        {
+            ele=a[j];
+            flag++;
+        }
+    
+}
+  
+
+  if(flag>1) 
+            printf("%d is repeated %d times\n",ele, flag);
+}
+return 0;
+}
